@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/game.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Crystal Collector Game</h1>
+    <h3 class="text-center">Try and match the amount given using the crystals given!</h3>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+      <!-- Calculator Panel -->
+      <div class="col-lg-8">
+        <div class="card">
+          <h3 class="card-header">Crystals!</h3>
+
+          <div class="card-body">
+            <img id = "button-1" data-value = "1" class = "button" src="images/BlueCrystal.jpeg"/>
+            <img id = "button-2" data-value = "2" class = "button" src="images/PurpleCrystal.jpeg"/>
+            <br><br>
+            <img id = "button-3" data-value = "3" class = "button" src="images/StraightCrystal.jpeg"/>
+            <img id = "button-4" data-value = "4" class = "button" src="images/WhiteCrystal.jpeg"/>
+            <br><br>
+            <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Panel -->
+      <div class="col-lg-4">
+        <div class="card">
+          <h3 class="card-header">Target!</h3>
+          <div class="card-body">
+            <h1 id="result"> Fill This</h1>
+          </div>
+           <h3 class="card-header">Current Score:</h3>
+          <div>
+            <h1 id="guess">Fill This</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  script 
